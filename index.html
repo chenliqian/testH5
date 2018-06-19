@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Document</title>
+  <title>bebleaf</title>
   <script>
     linkedme.init("7d85ab249784cbcc71e144de377f4541", {type: "live"}, null);
     var data = {};
@@ -21,7 +21,7 @@
     var value2 = 2;
     data.params = '{"key1":"'+value1+'","key2":"'+value2+'"}'; //注意单引号和双引号的位置
 
-    bebleaf.link(data, function(err, response){
+    linkedme.link(data, function(err, response){
       if(err){
         // 生成深度链接失败，返回错误对象err
       } else {
@@ -34,7 +34,7 @@
           或者安卓app
          */
         document.body.innerHTML += '<a class="bebleaf" href="'+response.url+'">bebleaf</a>'
-      }
+    }
     },false);
   </script>
 </head>
