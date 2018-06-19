@@ -5,7 +5,7 @@
   <title>bebleaf</title>
   <script src="https://static.lkme.cc/linkedme.min.js" ></script>
   <script>
-    bebleaf.init("7d85ab249784cbcc71e144de377f4541", {type: "test"}, null);
+    linkedme.init("7d85ab249784cbcc71e144de377f4541", {type: "test"}, null);
     var data = {};
     data.type = "test";  //表示现在使用线上模式,如果填写"test", 表示测试模式.【可选】
     data.feature = "功能名称"; // 自定义深度链接功能，多个用逗号分隔，【可选】
@@ -22,7 +22,7 @@
     var value2 = 2;
     data.params = '{"key1":"'+value1+'","key2":"'+value2+'"}'; //注意单引号和双引号的位置
 
-    bebleaf.link(data, function(err, response){
+    linkedme.link(data, function(err, response){
       if(err){
         // 生成深度链接失败，返回错误对象err
       } else {
