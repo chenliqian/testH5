@@ -7,9 +7,11 @@
   <script>
     var url= window.location.href;
     var urlArr = url.split('?');
-    var k = urlArr[1], appU = k.split('/');
+    if (urlArr[1] === undefined || urlArr[1].length == 0) {
+      var k = urlArr[1], appU = k.split('/');
     // alert(appU[0]);获取到？后面某个参数
-
+    }
+    
     linkedme.init("7d85ab249784cbcc71e144de377f4541", {type: "test"}, null);
     var data = {};
     data.type = "test";  //表示现在使用线上模式,如果填写"test", 表示测试模式.【可选】
