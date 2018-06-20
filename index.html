@@ -2,9 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>bebleaf</title>
-  <script src="https://static.lkme.cc/linkedme.min.js" ></script>
+  <title>bebleaf</title><script src="https://static.lkme.cc/linkedme.min.js" ></script>
   <script>
+    var url= window.location.href;
+    var urlArr = url.split('?');
+    var k = urlArr[0], appU = k.split('&');
+    alert(appU[3]);
+
     linkedme.init("7d85ab249784cbcc71e144de377f4541", {type: "test"}, null);
     var data = {};
     data.type = "test";  //表示现在使用线上模式,如果填写"test", 表示测试模式.【可选】
@@ -35,10 +39,9 @@
           或者安卓app
          */
         document.body.innerHTML += '<a class="bebleaf" href="'+response.url+'">打开Bebleaf</a>'
-        console.log(data.url);
     }
     },false);
-  </script>
+  </Script>
 </head>
 <body>
 </body>
