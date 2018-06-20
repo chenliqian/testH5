@@ -6,7 +6,7 @@
   <script>
     var url= window.location.href;
     var urlArr = url.split('?');
-    var k = urlArr[0], appU = k.split('&');
+    var k = urlArr[0], appU = k.split('/');
     alert(appU[3]);
 
     linkedme.init("7d85ab249784cbcc71e144de377f4541", {type: "test"}, null);
