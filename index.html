@@ -2,12 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>bebleaf</title><script src="https://static.lkme.cc/linkedme.min.js" ></script>
+  <title>bebleaf</title>
+  <script src="https://static.lkme.cc/linkedme.min.js" ></script>
   <script>
-    var url= window.location.href;
+    var url= "https://chenliqian.github.io/testH5/index.html?camera=1234/pwd=1234";//window.location.href;
     var urlArr = url.split('?');
     var k = urlArr[1], appU = k.split('/');
-    alert(appU[3]);
+    // alert(appU[0]);获取到？后面某个参数
 
     linkedme.init("7d85ab249784cbcc71e144de377f4541", {type: "test"}, null);
     var data = {};
@@ -38,8 +39,9 @@
           在移动端，深度链接直接会根据手机设备类型打开ios
           或者安卓app
          */
-        document.body.innerHTML += '<a class="bebleaf" href="'+response.url+'">打开Bebleaf</a>'
-    }
+        // document.body.innerHTML += '<a class="bebleaf" href="'+response.url+'">打开Bebleaf</a>'
+        window.location.href=response.url;
+      }
     },false);
   </Script>
 </head>
