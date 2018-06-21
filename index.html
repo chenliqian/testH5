@@ -24,8 +24,7 @@
     // 下面是自定义深度链接参数，用户点击深度链接打开app之后，params的参数会通过LinkedME服务器透传给app，由app根据参数进行相关跳转
     // 例如：详情页面的参数，写入到params中，这样在唤起app并获取参数后app根据参数跳转到详情页面
     var cameraInfo = appU[1];
-    var title = appU[2];
-    data.params = '{"cameraInfo":"'+cameraInfo+'","title":"'+title+'"}'; //注意单引号和双引号的位置
+    data.params = '{"cameraInfo":"'+cameraInfo+'"}'; //注意单引号和双引号的位置
     linkedme.link(data, function(err, response){
       if(err){
         // 生成深度链接失败，返回错误对象err
