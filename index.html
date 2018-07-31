@@ -10,11 +10,11 @@
     var k = urlArr[1], appU = k.split('&');
       // alert(appU[0]);获取到？后面某个参数
 
-    linkedme.init("7d85ab249784cbcc71e144de377f4541", {type: "test"}, null);
+    linkedme.init("7d85ab249784cbcc71e144de377f4541", {type: "live"}, null);
     var data = {};
-    data.type = "test";  //表示现在使用线上模式,如果填写"test", 表示测试模式.【可选】
+    data.type = "live";  //表示现在使用线上模式,如果填写"test", 表示测试模式.【可选】
     data.feature = "shareCamera"; // 自定义深度链接功能，多个用逗号分隔，【可选】
-    data.stage = "test"; // 自定义深度链接阶段，多个用逗号分隔，【可选】
+    data.stage = "live"; // 自定义深度链接阶段，多个用逗号分隔，【可选】
     data.channel = appU[0]; // 自定义深度链接渠道，多个用逗号分隔，【可选】
     data.tags = "BABYLEAF"; // 自定义深度链接标签，多个用逗号分隔，【可选】
     data.ios_custom_url = "https://www.pgyer.com/Bebcare"; // 自定义iOS平台下App的下载地址，如果是AppStore的下载地址可以不用填写，需填写http或https【可选】
